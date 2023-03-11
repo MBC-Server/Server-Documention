@@ -1,5 +1,7 @@
 - 伺服器資訊
-    - [更新資訊](server/news/版本更新.md)
+    - [主分流/二分流](server/introduction.md)
+    - [更新資訊](server/news/update.md)
+    - [伺服器規則](server/rules.md)
 
 - 伺服器開發人員教學
     - Minecraft 插件製作教學
