@@ -17,31 +17,41 @@
 </head>
 <body>
   <nav>
-    <a href="#/server/introduction">伺服器資訊</a>
-    <a href="#/developer/">開發人員教學</a>
+    <a href="https://mbc-server.github.io/Server-Documention/#/">伺服器資訊</a>
+    <a href="https://mbc-server.github.io/Server-Developer-Documention/#/">開發人員教學</a>
   </nav>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: '合作社',
-      nameLink: '/Server-Documention/#/',
+      nameLink: '/',
       themeColor: '#191970',
       loadSidebar: true,
       coverpage: true,
+      notFoundPage: true,
       repo: 'https://github.com/smile-minecraft/Server-Documention',
       subMaxLevel: 3,
       onlyCover: true,
       linkpreview: {
       key: "ddf9d9018b8f95a36ad47a612b08206e",
       },
-      search: 'auto', // default
-    }
+      search:{
+        noData: {
+          '/': '找不到結果',
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '搜尋',
+        },
+      },
+    };
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <!-- docsify -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   
 </body>
